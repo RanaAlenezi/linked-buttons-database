@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      body {
+        background: #3b0044;
+        color: #6098FF;
+        font-family: sans-serif;
+        font-size: 16px;
+      }
+      .wrapper {
+        margin: 80px auto;
+        text-align: center;
+        inline-size: 100%;
+        position: relative;
+      }
+      .button {
+        padding: 15px 100px;
+        margin: 10px 4px;
+        color: #ffffff;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+      }
+      .button {
+        border: 1px solid transparent;
+        -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+        transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+        
+      }
+      .button::before {
+        content: '';
+        position: absolute;
+        inset-inline-start: 0px;
+        inset-block-end: 0px;
+        z-index: -1;
+        inline-size: 0%;
+        block-size: 1px;
+        background: #003177;
+        box-shadow: inset 0px 0px 0px #b6cdef;
+        display: block;
+        -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+        transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+      }
+      .button:hover::before {
+        inline-size:100%;
+      }
+      .button::after {
+        content: '';
+        position: absolute;
+        inset-inline-end: 0px;
+        inset-block-start: 0px;
+        z-index: -1;
+        inline-size:0%;
+        block-size:1px;
+        background: #a9c1e8;
+        -webkit-transition: all 0.4s cubic-bezier(.7, .25, 0, 1);
+        transition: all 0.4s cubic-bezier(.7, .25, 0, 1)
+      }
+      .button:hover::after {
+        inline-size: 100%;
+
+      }
+      .button:hover{
+        border-inline-start: 1px solid #b6cdef;
+         border-inline-end: 1px solid #6098FF;
+        
+      }
+    </style>
+   
+   
+  
+  </head>
+  
+<body>
+    
+
+    <div class="wrapper">
+      <a href="db.php" input class="button" name="f" onclick="db.php">Front</a>
+      <a href="db.php" class="button" name="r">Right</a>
+      <a href="db.php" class="button" name="l">Left</a>
+      <a href="db.php" class="button" name="b">bottom</a>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
